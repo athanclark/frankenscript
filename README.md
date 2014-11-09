@@ -42,8 +42,8 @@ frankenPlus1(3);
 ➥ 4
 ```
 
-Now that `frankenPlus` has the strength of ten functions, we can be a
-mad (computer) scientist. For instance, `zipWith`:
+Now that `frankenPlus` has the strength of a hundred functions, we can _really_ be a
+mad (computer) scientist! For instance, `zipWith`:
 
 ```javascript
 var set1 = [1,2,3,4,5];
