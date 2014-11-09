@@ -29,7 +29,7 @@ turn them into nightmares, we use `Uhgg`.
 ```javascript
 var frankenPlus = Ughh(plus);
 ```
-`frankenPlus` can make for some pretty abbominable arithmetic! Watch in horror
+...which is pronounced __groan__. `frankenPlus` can make for some pretty abbominable arithmetic! Watch in horror
 as we attach the dismembered parameters and get our desired solution:
 
 ```javascript
