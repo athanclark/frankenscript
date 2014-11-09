@@ -14,7 +14,7 @@ FrankenScript is a Partial Application utility for JavaScript.
 
 ## Usage
 
-Let's dissect addition into a monstrosity. Here is an explicit
+Let's dissect addition and turn it into a monstrosity. Here is an explicit
 addition function, `plus`:
 
 ```javascript
@@ -29,8 +29,8 @@ turn them into nightmares, we use `Uhgg`.
 ```javascript
 var frankenPlus = Ughh(plus);
 ```
-`frankenPlus` can make for some pretty abbominable arithmetic! Watch -
-as we attach the dismembered parameters, we get our desired solutions:
+`frankenPlus` can make for some pretty abbominable arithmetic! Watch in horror
+as we attach the dismembered parameters and get our desired solution:
 
 ```javascript
 var frankenPlus1 = frankenPlus(1);
