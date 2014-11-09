@@ -5,7 +5,7 @@ FrankenScript
 
 Just kidding, that would be cool, though.
 
-__Status: Experimental__
+__Status__: _Experimental_
 
 --------
 
@@ -36,30 +36,32 @@ as we attach the dismembered parameters, we get our desired solutions:
 var frankenPlus1 = frankenPlus(1);
 
 frankenPlus1(2);
-➩ 3
+➥ 3
 
 frankenPlus1(3);
-➩ 4
+➥ 4
 ```
 
-With the strength of a thousand functions, `frankenPlus` can do some
-pretty crazy stuff. For instance, `zipWith`:
+Now that `frankenPlus` has the strength of ten functions, we can be a
+mad (computer) scientist. For instance, `zipWith`:
 
 ```javascript
 var set1 = [1,2,3,4,5];
 var set2 = [1,2,3,4,5,6];
 
 zipWith(frankenPlus, set1, set2);
-➩ [ 2, 4, 6, 8, 10 ]
+➥ [ 2, 4, 6, 8, 10 ]
 ```
-or, equivalently with Underscore's map & element-wise application:
+or, equivalently with [Underscore](http://underscorejs.org)'s map & element-wise application:
 
 ```javascript
 var plusN = _.map(set1, frankenPlus);
 
 app(plusN, set2);
-➩ [ 2, 4, 6, 8, 10 ]
+➥ [ 2, 4, 6, 8, 10 ]
 ```
+
+Both `zipWith` and `app` are taken from [Haskell](http://haskell.org).
 
 ## TODO
 
