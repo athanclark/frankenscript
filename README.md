@@ -63,6 +63,29 @@ app(plusN, set2);
 
 Both `zipWith` and `app` are taken from [Haskell](http://haskell.org).
 
+## Addons
+
+[Lo-Dash](https://lodash.com/docs#curry) has a `curry` function that does something similar to
+the partial application examples above, but it blends between JavaScript's multiple parameters 
+and chained invocations. Now, I've included the same functionality so we can do fun stuffs like
+this:
+
+```javascript
+var plus4 = function (a,b,c,d){
+  return a+b+c+d;
+}
+var frankenPlus4 = Ughh(plus4);
+
+frankenPlus4(1)(2)(3)(4);
+➥ 10
+
+frankenPlus4(1,2)(3,4);
+➥ 10
+
+frankenPlus4(1)(2,3,4);
+➥ 10
+```
+
 ## TODO
 
 - Hindley-Milner parametric polymorphism type inference
