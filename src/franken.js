@@ -36,3 +36,5 @@ function Ughh(raw){
 	}
 	return func;
 }
+
+Ughh.lazy = require('./lazy.js');
