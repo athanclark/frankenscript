@@ -1,3 +1,5 @@
+var is = require('./types.js').is;
+
 function clone(obj) {
 	if (null == obj || "object" != typeof obj) return obj;
 	var copy = obj.constructor();
