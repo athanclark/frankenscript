@@ -20,8 +20,10 @@ function Ughh(raw){
 	var args = arguments[2];
 
 	function func(next){
+		var nexts = [];
+		for (k in arguments) {nexts.push(arguments[k]);}
 		var newArgs = clone(args);
-		newArgs.push(next);
+		nexts.forEach(function(e){newArgs.push(e);});
 		if (newArgs.length === arity) {
 			return raw.apply(undefined, newArgs);
 		} else {
