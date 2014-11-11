@@ -87,6 +87,12 @@ frankenPlus4(1)(2,3,4);
 ➥ 10
 ```
 
+I have an issue calling this `curry`, because JavaScript's native multi-parameter function application
+`( ... , ... )` is not a tuple or product functor - it's not even a value, however it might be unique.
+Regardless, you can't say it's the product functor _universally_, because it's not first-class. I'm going
+to try and make a proper `curry` / `uncurry` that respects the adjoint, but first I need a lambda
+calculus.
+
 ### Trivial Type Checking
 We now have a very, very trivial method to declaring type signatures for your function. Observe:
 ```javascript
