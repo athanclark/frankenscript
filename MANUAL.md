@@ -14,6 +14,29 @@ forall a. a -> a
 forall a, b. a -> b -> a
 ```
 
+*Unification*
+
+### Currently Working Version
+Javascript natively has a few different types, as found by the `[[Class]]`
+attribute noted in Javascript garden. Here they are:
+
+TODO
+
+The only thing that isn't found is `undefined`, which we can still chain
+in our type checker. Note that `Object` and `Function` are as far as they
+go for `is` - however, we can do a number of things now. We can search for
+the existence of a property in an object (or it's prototype chain), and also, if
+we make a type signature declaration system in javascript, we will have a
+functional type signature there also. Using this information, we can make
+some basic type enforcement in functions. The real beauty will come from defining
+our own (higher kinded) types and aliases. This would require a global storage system
+(in `Ughh`).
+
+Using an explicit `return` statement and a custom "immutable" wrapper would also allow
+us to infer the type signatures of parametrically polymorphic functions, while also being
+assured the contents aren't toyed with. Also, an explicit `rec` function would give us
+the capacity to have truly lazy computation, giving rise to fixpoints (with type inference).
+
 
 ### Issues
 
