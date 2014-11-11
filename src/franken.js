@@ -1,4 +1,6 @@
-var is = require('./types.js').is;
+var types = require('./types.js');
+var is = types.is;
+
 var utils = require('./utils.js');
 var zipWith = utils.zipWith;
 var app = utils.app;
@@ -39,3 +41,4 @@ function Ughh(raw){
 }
 
 Ughh.lazy = require('./lazy.js');
+Ughh.typed = types.typed;
