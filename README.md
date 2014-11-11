@@ -65,6 +65,7 @@ Both `zipWith` and `app` are taken from [Haskell](http://haskell.org).
 
 ## Addons
 
+### Chunked Application
 [Lo-Dash](https://lodash.com/docs#curry) has a `curry` function that does something similar to
 the partial application examples above, but it blends between JavaScript's multiple parameters 
 and chained invocations. Now, I've included the same functionality so we can do fun stuffs like
@@ -84,6 +85,24 @@ frankenPlus4(1,2)(3,4);
 
 frankenPlus4(1)(2,3,4);
 ➥ 10
+```
+
+### Trivial Type Checking
+We now have a very, very trivial method to declaring type signatures for your function. Observe:
+```javascript
+var plusT = Ughh.typed("Number -> Number -> Number", function (n,m) {return n+m});
+
+plusT;
+➥ { [Function: func] typeSig: 'Number -> Number -> Number' }
+
+plusT(1);
+➥ { [Function: func] typeSig: 'Number -> Number' }
+
+plusT(1)(2);
+➥ 3
+
+plusT(1)("foo");
+➥ [Error: Parameter(s) does not match type signature]
 ```
 
 ## TODO
