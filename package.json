@@ -1,0 +1,29 @@
+{
+	"name": "frankenscript",
+	"version": "0.0.1",
+	"description": "Functional Programming in JavaScript",
+	"author": "Athan Clark <athan.clark@gmail.com>",
+	"main": "lib/franken.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/athanclark/frankenscript"
+	},
+	"bugs": {
+		"url": "https://github.com/athanclark/frankenscript/issues"
+	},
+	"keywords": [
+		"frankenscript",
+		"functional",
+		"lazy",
+		"partial",
+		"lambda",
+		"milner",
+		"hindley",
+		"fixpoint",
+		"category"
+	],
+	"dependencies": {
+		"lodash": "*"
+	},
+	"license": "MIT"
+}
